@@ -1,0 +1,11 @@
+body{
+    background-color: blue;
+}
+
+#area{
+        background-color: aqua;
+        height: 100px;
+        width: 100px;  
+        padding: 25px;
+        font-size: 40px;
+}

@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>DOM</title>
 </head>
 
 <body>
 
+<div id=area onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> 
+DOM
+</div>
 
-    
 <script>
 var a = window.document.getElementById('area')
 
         function clicar(){
-            a.innerText = 'Clicou!'
+            a.innerText = 'Nada!'
         }
 
         function entrar() {
-            a.innerText = 'Entrou!'
+            a.innerText = 'Olá!'
         } 
 
         function sair() {
-            a.innerText = 'Saiu!'
+            a.innerText = 'Adeus!'
             a.inner.background = 'violet'
         }
 </script>
