@@ -9,24 +9,29 @@
 
 <body>
 
-<div id=area onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> 
+<div id=area> 
 DOM
 </div>
 
 <script>
 var a = window.document.getElementById('area')
+a.addEventListener('click', clicar)
+a.addEventListener('mouseenter', entrar)
+a.addEventListener('mouseout', sair)
 
         function clicar(){
             a.innerText = 'Nada!'
+            a.style.background = 'white'
         }
 
         function entrar() {
             a.innerText = 'Olá!'
+            a.style.background = 'grey'
         } 
 
         function sair() {
             a.innerText = 'Adeus!'
-            a.inner.background = 'violet'
+            a.style.background = 'red'
         }
 </script>
 
