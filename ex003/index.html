@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ex003</title>
+</head>
+<body>
+    
+<h1>Soma dos valores</h1>
+<input type="number" name="var1" id="var1">
+<input type="number" name="var2" id="var2">
+<input type="button" name="Somar" onclick="somar()">
+<div id="res">Resultado</div>
+<script>
+
+    function somar() {
+
+        var v1 = window.document.getElementById("var1")
+        var v2 = window.document.getElementById("var2")
+        var n1 = number(v1.value)
+        var n2 = number(v2.value)
+        var s = n1 + n2
+        res.innerHTML=`A soma de ${n1} + ${n2} é igual a ${s}`
+    }
+
+</script>
+
+</body>
+</html>
